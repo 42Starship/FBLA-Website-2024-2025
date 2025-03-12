@@ -1,0 +1,154 @@
+body {
+  background-color: #009639; /* Official school green */
+}
+
+
+.top-rectangle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10.416%;
+  background-color: black;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.top-white {
+  position: fixed;
+  top: 10.4%;
+  left: 0;
+  width: 100%;
+  height: 0.5208%;
+  background-color: white;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.bottom-rectangle {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 10.416%;
+  background-color: black;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.break {  /* makes a horizontal black line through the middle of the green half of page*/
+  position: fixed;
+  top: 55.5%;
+  left: 0;
+  width: 100%;
+  height: 0.206%;
+  background-color: black;
+  z-index: -1;
+}
+
+.logo {
+  background-image: url('SHSLogo.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 11.61%;
+  height: 10.39%;
+  background-color: black;
+  z-index: 9999;
+}
+
+button {
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.3s;
+}
+button:hover {
+	background-color: #385A3F;
+	color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 5.19%;
+  height: 6%;
+  width: 100%;
+  z-index: 1;
+
+  button { /* Styles button ONLY in button container */
+    display: block;
+    height: 90%;
+    width: 16%;}
+}
+
+.white {
+	margin-right: 0.5208%;
+}
+
+.jobListing-grid-container {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%; /* Can have width but not height here since we're stacking rows*/
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr); /* 3+4 equal-width columns*/
+    display: grid;
+    grid-auto-rows: min-content; /* Rows adjust to the content size*/
+    grid-template-columns: auto auto auto auto auto auto auto; /*Specifying the width of the four collumns, auto makes them equal/adjusts*/
+    border: 3px solid black; /* Width style color*/
+}
+
+.jobListing-grid-container div { /* Affects inner divs*/
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* creates 3+4 new divs that add onto the container made with flexbox
+    The collumn maintain the same shape and extends with each new row
+    Column uses same sketchy font stuff from past project
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
